@@ -2,18 +2,12 @@ import '../styles/globals.css';
 import 'antd/dist/antd.css';
 import type { AppProps } from 'next/app';
 import { Menu, MenuTheme, Switch } from 'antd';
-import { AppstoreOutlined, HomeOutlined } from '@ant-design/icons';
+import { BookOutlined, HomeOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import React, { useState } from 'react';
-import Portfolio from '.';
+import Portfolio from './Portfolio';
 
 const items: MenuProps['items'] = [
-    // {
-    //     label: 'Logo',
-    //     key: "Charles Goh",
-    //     icon: <HomeOutlined />,
-    //     disabled: false
-    // },
     {
         label: 'Portfolio',
         key: 'portfolio',
@@ -23,8 +17,8 @@ const items: MenuProps['items'] = [
     {
         label: 'Blog',
         key: 'blog',
-        icon: <AppstoreOutlined />,
-        disabled: false,
+        icon: <BookOutlined />,
+        disabled: true,
     },
 ]
 

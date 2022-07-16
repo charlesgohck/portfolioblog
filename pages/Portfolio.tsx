@@ -1,0 +1,269 @@
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { Avatar, Row, Col, Typography, Divider, Button, Timeline, List } from 'antd';
+import React, { ReactNode } from 'react';
+import {
+    LinkedinFilled,
+    MailFilled,
+    ClockCircleFilled,
+    LaptopOutlined,
+    BookOutlined,
+    CodeOutlined,
+    DatabaseOutlined,
+    ExperimentOutlined,
+    SecurityScanOutlined,
+    CloudOutlined,
+    EditOutlined,
+    CustomerServiceOutlined,
+    UsergroupAddOutlined,
+    FileWordOutlined,
+    FundProjectionScreenOutlined,
+    FontSizeOutlined
+  } from '@ant-design/icons';
+import { Parallax } from 'rc-scroll-anim';
+
+const { Title, Paragraph } = Typography;
+
+interface Ellipsis {
+    rows: number,
+    expandable: boolean,
+    suffix: string,
+    symbol: ReactNode,
+    tooltip: boolean | ReactNode,
+    onExpand: any,
+    onEllipsis: any,
+}
+
+interface SkillsData {
+    title: string,
+    avatar: any,
+    description: string
+}
+
+const Portfolio: NextPage = () => {
+
+    const technicalSkillsData: SkillsData[] = [
+        {
+            title: 'Programming & Markup Languages',
+            avatar: <CodeOutlined/>,
+            description: "Python, Java, Javscript, C#, HTML + CSS, Markdown"
+        },
+        {
+            title: 'Full-Stack Development Technologies',
+            avatar: <ExperimentOutlined/>,
+            description: "ReactJS, Angular, Spring/Springboot, jQuery, .NET Framework, REST APIs"
+        },
+        {
+            title: 'Databases',
+            avatar: <DatabaseOutlined/>,
+            description: "SQL, NoSQL"
+        },
+        {
+            title: 'Software Security',
+            avatar: <SecurityScanOutlined/>,
+            description: "Checkmarx, Blackduck, SAML2 Auth, OAuth, Company B2E Security Libraries"
+        },
+        {
+            title: 'Software & IT Service Management',
+            avatar: <CustomerServiceOutlined/>,
+            description: "Github/Gitlab/Bitbucket, Jira, ServiceNow"
+        },
+        {
+            title: 'UI Design',
+            avatar: <EditOutlined/>,
+            description: "Sketch, Adobe XD, Balsamiq"
+        },
+        {
+            title: 'Cloud',
+            avatar: <CloudOutlined/>,
+            description: "AWS Certified Cloud Practitioner, Company Cloud Management Platform"
+        }
+    ];
+
+    const nonTechnicalSkillsData: SkillsData[] = [
+        {
+            title: 'Office Productivity',
+            avatar: <FileWordOutlined/>,
+            description: "Microsoft Word, Powerpoint, Excel, Outlook, Visio and Google Workspace Equivalents"
+        },
+        {
+            title: 'Language Proficiency',
+            avatar: <FontSizeOutlined/>,
+            description: "English (Native Proficiency), Chinese (Limited Working Proficiency)"
+        },
+        {
+            title: 'Intangible Integrated Skills',
+            avatar: <FundProjectionScreenOutlined/>,
+            description: "Project Management, Communication"
+        }
+    ];
+
+    return <>
+        <Head>
+            <title>Charles Goh's Porfolio Blog</title>
+            <meta name="description" content="Charles Goh's Portfolio Blog" />
+            <link rel="icon" href="/assets/portfolio/favicon.jpg" />
+        </Head>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "5%", display: 'flex', justifyContent: 'center' }}>
+                <Col>
+                    <Avatar src='/assets/portfolio/CharlesInSuitSquare.jpg' size={300} />
+                </Col>
+                <Col style={{ maxWidth: "60%" }}>
+                    <Title>Hello. I am Charles Goh.</Title>
+                    <Paragraph strong>I am a software engineer, problem solver, and learner.</Paragraph>
+                    <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
+                        I work as a full-stack software engineer, spearheading or collaborating to build web applications 
+                        that automate infrastructure processes at scale for internal cloud solutions, with security and industry 
+                        compliance best practices in mind. 
+                    </Paragraph>
+                    <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
+                        I'm passionate about business problems, technology, 
+                        world affairs, and health/fitness, and I aspire to make a lasting 
+                        positive impact in the world through solving problems in tech.
+                    </Paragraph>
+                    <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
+                        <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
+                    </Button>
+                    <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
+                        <MailFilled width={100} style={{ fontSize: '60px', color: 'darkred' }} />
+                    </Button>
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Col>
+                    <Title>Experience</Title>
+                    <Timeline>
+                        <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
+                            October 2020 - Present: <strong>Software Engineer (Assoc Systems Administrator) @ Visa</strong>
+                        </Timeline.Item>
+                        <Timeline.Item color="crimson">May 2019 - August 2019: <strong>Software Engineer (Systems Administrator) Intern @ Visa</strong></Timeline.Item>
+                        <Timeline.Item color="crimson">December 2013 - December 2015: <strong>Full-Time National Serviceman @ Singapore Armed Forces</strong></Timeline.Item>
+                    </Timeline>
+                </Col>
+                <Col style={{ paddingLeft: "5%" }}>
+                    <LaptopOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Col style={{ paddingRight: "5%" }}>
+                    <BookOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                </Col>
+                <Col>
+                    <Title>Education</Title>
+                    <Timeline>
+                        <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
+                            January 2022 - Present: <strong>Masters of Science in Computer Science @ Georgia Institute of Technology</strong>
+                        </Timeline.Item>
+                        <Timeline.Item color="crimson">
+                            August 2016 - May 2020: <strong>Bachelor of Computing (Distinction Honours) in Computer Science 
+                            <br/>with Minor in Management @ National University of Singapore</strong>
+                        </Timeline.Item>
+                    </Timeline>
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Col style={{ minWidth: "45%" }}>
+                    <Title>Technical Skills</Title>
+                    <List
+                        itemLayout="horizontal"
+                        dataSource={technicalSkillsData}
+                        renderItem={item => (
+                        <List.Item>
+                            <List.Item.Meta
+                                avatar={item.avatar}
+                                title={item.title}
+                                description={item.description}
+                            />
+                        </List.Item>
+                        )}
+                    />
+                </Col>
+                <Col style={{ paddingLeft: "5%" }}>
+                    <CodeOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Col style={{ paddingRight: "5%" }}>
+                    <UsergroupAddOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                </Col>
+                <Col style={{ minWidth: "45%" }}>
+                    <Title>Non-Technical Skills</Title>
+                    <List
+                        itemLayout="horizontal"
+                        dataSource={nonTechnicalSkillsData}
+                        renderItem={item => (
+                        <List.Item>
+                            <List.Item.Meta
+                                avatar={item.avatar}
+                                title={item.title}
+                                description={item.description}
+                            />
+                        </List.Item>
+                        )}
+                    />
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Parallax
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
+            className="code-box-shape"
+        >
+            <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Col>
+                    <Title>Projects</Title>
+                    <Timeline>
+                        <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
+                            July 2022 - Present: <strong>charlesgoh.io Portfolio and Blog</strong>
+                        </Timeline.Item>
+                        <Timeline.Item color="crimson">May 2019 - August 2019: <strong>Software Engineer (Systems Administrator) Intern @ Visa</strong></Timeline.Item>
+                        <Timeline.Item color="crimson">December 2013 - December 2015: <strong>Full-Time National Serviceman @ Singapore Armed Forces</strong></Timeline.Item>
+                    </Timeline>
+                </Col>
+                <Col style={{ paddingLeft: "5%" }}>
+                    <UsergroupAddOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                </Col>
+            </Row>
+        </Parallax>
+        <Divider/>
+        <Row style={{ padding: "2%", height: "300px" }}>
+            <Paragraph>Hello world!</Paragraph>
+        </Row>
+    </>
+}
+
+export default Portfolio
