@@ -92,7 +92,7 @@ const Portfolio: NextPage = () => {
             description: "English (Native Proficiency), Chinese (Limited Working Proficiency)"
         },
         {
-            title: 'Intangible Integrated Skills',
+            title: 'Other',
             avatar: <FundProjectionScreenOutlined/>,
             description: "Project Management, Communication"
         }
@@ -100,7 +100,7 @@ const Portfolio: NextPage = () => {
 
     return <>
         <Head>
-            <title>Charles Goh's Porfolio Blog</title>
+            <title>Charles Goh&apos;s Porfolio Blog</title>
             <meta name="description" content="Charles Goh's Portfolio Blog" />
             <link rel="icon" href="/assets/portfolio/favicon.jpg" />
         </Head>
@@ -122,8 +122,8 @@ const Portfolio: NextPage = () => {
                         compliance best practices in mind. 
                     </Paragraph>
                     <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
-                        I'm passionate about business problems, technology, 
-                        world affairs, and health/fitness, and I aspire to make a lasting 
+                        I&apos;m passionate about business problems, technology, 
+                        world affairs, and health/fitness. I aspire to make a lasting 
                         positive impact in the world through solving problems in tech.
                     </Paragraph>
                     <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
@@ -160,7 +160,7 @@ const Portfolio: NextPage = () => {
         <Divider/>
         <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
-            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
             className="code-box-shape"
         >
             <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -212,7 +212,7 @@ const Portfolio: NextPage = () => {
         <Divider/>
         <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
-            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            style={{ transform: 'translateX(-100px)', opacity: 0 }}
             className="code-box-shape"
         >
             <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -220,7 +220,7 @@ const Portfolio: NextPage = () => {
                     <UsergroupAddOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
                 </Col>
                 <Col style={{ minWidth: "45%" }}>
-                    <Title>Non-Technical Skills</Title>
+                    <Title>Integrated Skills</Title>
                     <List
                         itemLayout="horizontal"
                         dataSource={nonTechnicalSkillsData}
@@ -245,23 +245,22 @@ const Portfolio: NextPage = () => {
         >
             <Row style={{ paddingTop: "1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Col>
-                    <Title>Projects</Title>
+                    <Title>Recent Projects</Title>
                     <Timeline>
                         <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
-                            July 2022 - Present: <strong>charlesgoh.io Portfolio and Blog</strong>
+                            July 2022 - Present: <strong>charlesgoh.io Blog</strong>
                         </Timeline.Item>
-                        <Timeline.Item color="crimson">May 2019 - August 2019: <strong>Software Engineer (Systems Administrator) Intern @ Visa</strong></Timeline.Item>
-                        <Timeline.Item color="crimson">December 2013 - December 2015: <strong>Full-Time National Serviceman @ Singapore Armed Forces</strong></Timeline.Item>
+                        <Timeline.Item color="crimson">July 2022: <strong>charlesgoh.io Portfolio Page</strong></Timeline.Item>
                     </Timeline>
                 </Col>
                 <Col style={{ paddingLeft: "5%" }}>
-                    <UsergroupAddOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
+                    <FundProjectionScreenOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
                 </Col>
             </Row>
         </Parallax>
         <Divider/>
-        <Row style={{ padding: "2%", height: "300px" }}>
-            <Paragraph>Hello world!</Paragraph>
+        <Row style={{ padding: "2%", height: "350px", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Paragraph>Built with Ant Design, NextJS, and Azure!</Paragraph>
         </Row>
     </>
 }

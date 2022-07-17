@@ -5,7 +5,7 @@ import { Menu, MenuTheme, Switch } from 'antd';
 import { BookOutlined, HomeOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import React, { useState } from 'react';
-import Portfolio from './Portfolio';
+import Portfolio from '.';
 
 const items: MenuProps['items'] = [
     {
