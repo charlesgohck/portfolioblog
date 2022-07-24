@@ -67,7 +67,7 @@ const Portfolio: NextPage = () => {
         {
             title: 'Software & IT Service Management',
             avatar: <CustomerServiceOutlined/>,
-            description: "Github/Gitlab/Bitbucket, Jira, ServiceNow"
+            description: "Github/Bitbucket, Jira, ServiceNow"
         },
         {
             title: 'UI Design',
