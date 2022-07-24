@@ -61,12 +61,12 @@ const Portfolio: NextPage = () => {
         {
             title: 'Software Security',
             avatar: <SecurityScanOutlined/>,
-            description: "Checkmarx, Blackduck, SAML2 Auth, OAuth, Company B2E Security Libraries"
+            description: "Checkmarx, Blackduck, SAML2 Auth, OAuth, Enterprise B2E Security Libraries"
         },
         {
             title: 'Software & IT Service Management',
             avatar: <CustomerServiceOutlined/>,
-            description: "Github/Gitlab/Bitbucket, Jira, ServiceNow"
+            description: "Github/Bitbucket, Jira, ServiceNow"
         },
         {
             title: 'UI Design',
@@ -76,7 +76,7 @@ const Portfolio: NextPage = () => {
         {
             title: 'Cloud',
             avatar: <CloudOutlined/>,
-            description: "AWS Certified Cloud Practitioner, Company Cloud Management Platform"
+            description: "AWS Certified Cloud Practitioner"
         }
     ];
 
