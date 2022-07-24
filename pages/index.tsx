@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Avatar, Row, Col, Typography, Divider, Button, Timeline, List } from 'antd';
 import React, { ReactNode } from 'react';
+import AntiNextMenu from '../components/AntNextMenu';
 import {
     LinkedinFilled,
     MailFilled,
@@ -102,8 +103,8 @@ const Portfolio: NextPage = () => {
         <Head>
             <title>Charles Goh&apos;s Porfolio &amp; Blog</title>
             <meta name="description" content="Charles Goh's Portfolio Blog" />
-            <link rel="icon" href="/assets/portfolio/favicon.jpg" />
         </Head>
+        <AntiNextMenu activeKeys={[""]}/>
         <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
             style={{ transform: 'translateX(-100px)', opacity: 0 }}
