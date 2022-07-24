@@ -94,13 +94,13 @@ const Portfolio: NextPage = () => {
         {
             title: 'Other',
             avatar: <FundProjectionScreenOutlined/>,
-            description: "Project Management, Communication"
+            description: "Project Management, Problem Solving, Strategic Thinking, Collaboration, Communication"
         }
     ];
 
     return <>
         <Head>
-            <title>Charles Goh&apos;s Porfolio Blog</title>
+            <title>Charles Goh&apos;s Porfolio &amp; Blog</title>
             <meta name="description" content="Charles Goh's Portfolio Blog" />
             <link rel="icon" href="/assets/portfolio/favicon.jpg" />
         </Head>
@@ -115,10 +115,10 @@ const Portfolio: NextPage = () => {
                 </Col>
                 <Col style={{ maxWidth: "60%" }}>
                     <Title>Hello. I am Charles Goh.</Title>
-                    <Paragraph strong>I am a software engineer, problem solver, and learner.</Paragraph>
+                    <Paragraph strong>I am an engineer, problem solver, and learner.</Paragraph>
                     <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
-                        I work as a full-stack software engineer, spearheading or collaborating to build web applications 
-                        that automate infrastructure processes at scale for internal cloud solutions, with security and industry 
+                        I work as a full-stack software engineer, building web applications 
+                        that automate infrastructure processes for internal cloud solutions, with security and industry 
                         compliance best practices in mind. 
                     </Paragraph>
                     <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
@@ -129,7 +129,7 @@ const Portfolio: NextPage = () => {
                     <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
                         <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
                     </Button>
-                    <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
+                    <Button type="text" href={"mailto:contact@charlesgoh.io"} target="_blank">
                         <MailFilled width={100} style={{ fontSize: '60px', color: 'darkred' }} />
                     </Button>
                 </Col>
@@ -171,7 +171,7 @@ const Portfolio: NextPage = () => {
                     <Title>Education</Title>
                     <Timeline>
                         <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
-                            January 2022 - Present: <strong>Masters of Science in Computer Science @ Georgia Institute of Technology</strong>
+                            January 2022 - Present: <strong>Master of Science in Computer Science @ Georgia Institute of Technology</strong>
                         </Timeline.Item>
                         <Timeline.Item color="crimson">
                             August 2016 - May 2020: <strong>Bachelor of Computing (Distinction Honours) in Computer Science 
@@ -237,8 +237,8 @@ const Portfolio: NextPage = () => {
                 </Col>
             </Row>
         </Parallax>
-        <Divider/>
-        <Parallax
+        {/* <Divider/> */}
+        {/* <Parallax
             animation={{ x: 0, opacity: 1, playScale: [0.3, 0.8] }}
             style={{ transform: 'translateX(-100px)', opacity: 0 }}
             className="code-box-shape"
@@ -257,10 +257,18 @@ const Portfolio: NextPage = () => {
                     <FundProjectionScreenOutlined width={100} style={{ fontSize: '100px', color: 'darkred' }} />
                 </Col>
             </Row>
-        </Parallax>
+        </Parallax> */}
         <Divider/>
-        <Row style={{ padding: "2%", height: "350px", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Paragraph>Built with Ant Design, NextJS, and Azure!</Paragraph>
+        <Row style={{ padding: "5% 1% 1% 1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Paragraph>For professional or business enquiries, I am contactable via the following methods:</Paragraph>
+        </Row>
+        <Row style={{ padding: "1% 1% 10% 1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
+                <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
+            </Button>
+            <Button type="text" href={"mailto:contact@charlesgoh.io"} target="_blank">
+                <MailFilled width={100} style={{ fontSize: '60px', color: 'darkred' }} />
+            </Button>
         </Row>
     </>
 }

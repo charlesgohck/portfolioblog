@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import 'antd/dist/antd.css';
 import type { AppProps } from 'next/app';
-import { Menu, MenuTheme, Switch } from 'antd';
+import { Menu } from 'antd';
 import { BookOutlined, HomeOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import React, { useState } from 'react';
