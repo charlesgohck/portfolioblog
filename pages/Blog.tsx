@@ -6,11 +6,11 @@ import AntiNextMenu from '../components/AntNextMenu';
 const Blog: NextPage = () => {
     return <>
         <Head>
-            <title>Charles Goh&apos;s Porfolio &amp; Blog</title>
-            <meta name="description" content="Charles Goh's Portfolio Blog" />
+            <title>Charles Goh (长康) Blog</title>
+            <meta name="description" content="Charles Goh's Blog" />
         </Head>
         <AntiNextMenu activeKeys={["blog"]} />
-        <h1>Hello World</h1>
+        <h1>Development in progress...</h1>
     </>
 }
 

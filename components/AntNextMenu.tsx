@@ -18,7 +18,7 @@ function AntiNextMenu(props: AntiNextMenuProps) {
             label: 'Blog',
             key: 'blog',
             icon: <BookOutlined />,
-            disabled: false,
+            disabled: true,
         },
     ]
 
