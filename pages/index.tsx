@@ -116,7 +116,7 @@ const Portfolio: NextPage = () => {
                 </Col>
                 <Col style={{ maxWidth: "60%" }}>
                     <Title>Hello. I am Charles Goh (长康).</Title>
-                    <Paragraph strong>I am an engineer, problem solver, and team player.</Paragraph>
+                    <Paragraph strong>I am an engineer, problem solver, and learner.</Paragraph>
                     <Paragraph ellipsis={{ rows: 5, expandable: true, symbol: 'more' }}>
                         I work as a full-stack software engineer, building web applications 
                         that automate infrastructure processes for internal cloud solutions, with security and industry 
@@ -130,9 +130,9 @@ const Portfolio: NextPage = () => {
                     <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
                         <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
                     </Button>
-                    {/* <Button type="text" href={"mailto:charlesgohck@charlesgohck.com"} target="_blank">
+                    <Button type="text" href={"mailto:contact@charlesgohck.com?subject=Enquiry: Enter Title Here"} target="_blank">
                         <MailFilled width={100} style={{ fontSize: '60px', color: 'darkred' }} />
-                    </Button> */}
+                    </Button>
                 </Col>
             </Row>
         </Parallax>
@@ -267,9 +267,9 @@ const Portfolio: NextPage = () => {
             <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
                 <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
             </Button>
-            {/* <Button type="text" href={"mailto:charlesgohck@charlesgohck.com"} target="_blank">
+            <Button type="text" href={"mailto:contact@charlesgohck.com?subject=Enquiry: Enter Title Here"} target="_blank">
                 <MailFilled width={100} style={{ fontSize: '60px', color: 'darkred' }} />
-            </Button> */}
+            </Button>
         </Row>
     </>
 }
