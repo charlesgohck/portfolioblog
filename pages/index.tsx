@@ -260,10 +260,7 @@ const Portfolio: NextPage = () => {
             </Row>
         </Parallax> */}
         <Divider/>
-        <Row style={{ padding: "5% 1% 1% 1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Paragraph>For professional or business enquiries, I am contactable via the following methods:</Paragraph>
-        </Row>
-        <Row style={{ padding: "1% 1% 10% 1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Row style={{ padding: "10% 1% 10% 1%", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Button type="text" href={"https://www.linkedin.com/in/charlesgoh/"} target="_blank">
                 <LinkedinFilled width={100} style={{ fontSize: '60px', color: '#0A66C2' }} />
             </Button>
