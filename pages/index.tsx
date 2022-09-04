@@ -147,7 +147,10 @@ const Portfolio: NextPage = () => {
                     <Title>Experience</Title>
                     <Timeline>
                         <Timeline.Item dot={<ClockCircleFilled className="timeline-clock-icon" />} color="crimson">
-                            October 2020 - Present: <strong>Software Engineer (Assoc Systems Administrator) @ Visa</strong>
+                            September 2022 - Present: <strong>Senior Software Engineer (Systems Administrator) @ Visa</strong>
+                        </Timeline.Item>
+                        <Timeline.Item color="crimson">
+                            October 2020 - September 2022: <strong>Software Engineer (Associate Systems Administrator) @ Visa</strong>
                         </Timeline.Item>
                         <Timeline.Item color="crimson">May 2019 - August 2019: <strong>Software Engineer (Systems Administrator) Intern @ Visa</strong></Timeline.Item>
                         <Timeline.Item color="crimson">December 2013 - December 2015: <strong>Full-Time National Serviceman @ Singapore Armed Forces</strong></Timeline.Item>
